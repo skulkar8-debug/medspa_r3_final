@@ -775,7 +775,7 @@ body {
     <!-- Intro -->
     <div style="display:grid; grid-template-columns:2fr 3fr; gap:40px; margin-bottom:8px;">
       <div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.2px; margin-bottom:12px;">Every metric in this document is produced by a live intelligence pipeline, not a static dataset.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.2px; margin-bottom:12px;">Every metric in this document is produced by a live intelligence pipeline, not a static dataset. Data vintage: Q1 2026; pipeline is refreshed continuously.</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#555; line-height:1.7;">The analysis that follows is generated from STOC's Corporate Development Support (CDS) intelligence layer. Each target in the dataset is scored, classified, and refreshed continuously. What follows defines what that means in practice.</div>
       </div>
       <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#333; line-height:1.7;">STOC's core dataset of 12,920 licensed medical spas sits within a broader universe of U.S. locations offering medical-grade aesthetic services. For context, the American Med Spa Association enumerates approximately 10,488 licensed medical spas (AmSpa, 2024). The difference is intentional. STOC maps all U.S. locations offering medical-grade aesthetic services under physician supervision, including standalone medical spas, cosmetic dermatology practices with aesthetic service lines, and plastic surgery clinics with non-surgical revenue. This broader scope reflects how PE platforms actually build acquisitions - routinely including adjacent practice types that operate economically as med spas regardless of licensure classification.</div>
@@ -789,7 +789,7 @@ body {
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#1275B0; margin-bottom:10px;">Dataset Scope</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:3px;">12,920</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:12px;">Tracked medical-aesthetics locations, Q1 2026 ²</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6; margin-bottom:10px;">Base universe: Ownership = Target AND MedSpa Y/N = Y. Conservative licensed-medspa screen excluding nail, hair, tattoo, IV/drip, sports/rehab, dental, massage, chiro, and similar non-core concepts. Spans 640 CBSAs across all 50 states.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6; margin-bottom:10px;">Base universe: Ownership = Target AND MedSpa Y/N = Y. Conservative licensed-medspa screen excluding nail, hair, tattoo, IV/drip, sports/rehab, dental, massage, chiro, and similar non-core concepts. Spans 640 CBSAs nationwide.</div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Outreach-ready targets</span><span style="color:#1275B0; font-weight:600;">4,863</span></div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Priority tier (STOC &ge;70)</span><span style="color:#1275B0; font-weight:600;">5,898</span></div>
         <div style="border-top:1px solid #eee; border-bottom:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Data points per target</span><span style="color:#1275B0; font-weight:600;">79</span></div>
@@ -831,7 +831,7 @@ body {
           </div>
           <div style="background:#F4F2EE; padding:8px 10px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#0D1B2F; margin-bottom:2px;">Cannibalization Risk &nbsp;<span style="color:#1275B0; font-weight:800;">0 – 10 pts</span></div>
-            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">None = 10 &nbsp;·&nbsp; Low = 7 &nbsp;·&nbsp; Med = 3 &nbsp;·&nbsp; High = 0</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">None = 10 &nbsp;·&nbsp; Low = 7 &nbsp;·&nbsp; Med = 3 &nbsp;·&nbsp; High = 0. Steps are intentionally non-uniform; the High penalty is weighted to disproportionately penalize direct platform overlap.</div>
           </div>
         </div>
       </div>
@@ -879,7 +879,7 @@ body {
             <td style="padding:4px 10px 4px 0; color:#333;">Geo Opportunity Index</td>
             <td style="padding:4px 10px; color:#555;">Normalized supply-gap signal: (GOI + 1) × 25</td>
             <td style="padding:4px 10px; text-align:right; color:#0D1B2F; font-weight:700;">0 – 50</td>
-            <td style="padding:4px 0 4px 10px; color:#555;">GOI of 0.8 = 45 pts; GOI of 0 = 25 pts</td>
+            <td style="padding:4px 0 4px 10px; color:#555;">GOI of 0.8 = 45 pts; GOI of 0 = 25 pts. A neutral market (GOI=0) contributes 25 pts by design.</td>
           </tr>
           <tr style="border-bottom:1px solid #eee;">
             <td style="padding:4px 10px 4px 0; color:#333;">Target Neighbors</td>
@@ -1185,7 +1185,7 @@ body {
       </div>
       <div style="background:#fff; padding:11px 16px; border-top:2px solid #2a4a6a; border:1px solid #e8e8e8; border-top:2px solid #2a4a6a;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#2a4a6a; margin-bottom:6px;">Northeast + West: Scored Entry Only</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6;">Northeast: highest PE rate in the dataset (14.1%), active consolidation in 14 CBSAs. West: 3,655 targets but PE present in 8 CBSAs above the dominant threshold. Both require CBSA-level selection rather than broad regional deployment.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6;">Northeast: highest PE rate in the dataset (14.1%); PE penetration is at or above the dominant threshold (≥15%) in 14 of 64 CBSAs. West: 3,655 targets; PE penetration is at or above the dominant threshold (≥15%) in 8 of 125 CBSAs. Both regions require CBSA-level selection rather than broad regional deployment.</div>
       </div>
     </div>
 
@@ -1221,11 +1221,11 @@ body {
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid #ddd; border-top:2px solid #0D1B2F; margin-bottom:10px; flex-shrink:0;">
       <div style="padding:10px 16px; border-right:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">Dense Urban &nbsp;<span style="font-size:8px; font-weight:400; color:#888; text-transform:none; letter-spacing:0;">4,515 targets</span></div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Major metro and core urban markets. Population 50K+. Z1: 0-2 mi &nbsp;·&nbsp; Z2: 2-5 mi &nbsp;·&nbsp; Z3: 5-10 mi &nbsp;·&nbsp; Z4: 10-15 mi. Max cap 15 miles applied to dense metros (NYC, Boston, DC, SF) to prevent overstatement of tuck-in range.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Major metro and core urban markets. Population 50K+. Note: STOC scores are not directly cross-tier comparable  -  wider zone radii in lower-density tiers count Target Neighbors across a larger catchment. Z1: 0-2 mi &nbsp;·&nbsp; Z2: 2-5 mi &nbsp;·&nbsp; Z3: 5-10 mi &nbsp;·&nbsp; Z4: 10-15 mi. Max cap 15 miles applied to dense metros (NYC, Boston, DC, SF) to prevent overstatement of tuck-in range.</div>
       </div>
       <div style="padding:10px 16px; border-right:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#1A3A5C; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">Mid-Density &nbsp;<span style="font-size:8px; font-weight:400; color:#888; text-transform:none; letter-spacing:0;">7,156 targets</span></div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Secondary and mid-sized markets. Generally 15K+. Z1: 0-3 mi &nbsp;·&nbsp; Z2: 3-7 mi &nbsp;·&nbsp; Z3: 7-15 mi &nbsp;·&nbsp; Z4: 15-25 mi. Radius assumptions best calibrated to actual competitive structure at this tier.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Secondary and mid-sized markets. Population 15K–50K (markets above 50K assigned to Dense Urban). Z1: 0-3 mi &nbsp;·&nbsp; Z2: 3-7 mi &nbsp;·&nbsp; Z3: 7-15 mi &nbsp;·&nbsp; Z4: 15-25 mi. Radius assumptions best calibrated to actual competitive structure at this tier.</div>
       </div>
       <div style="padding:10px 16px;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#3A6090; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">Suburban &nbsp;<span style="font-size:8px; font-weight:400; color:#888; text-transform:none; letter-spacing:0;">1,249 targets</span></div>
@@ -1296,7 +1296,7 @@ body {
                 <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:800; color:#C04A2A;">1.04</div>
               </div>
               <div style="height:14px; background:#eee; border-radius:1px;"><div style="height:14px; background:#C04A2A; width:52%; border-radius:1px;"></div></div>
-              <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#888; margin-top:2px;">Thin target pool</div>
+              <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#888; margin-top:2px;">Smallest target pool (1,249)</div>
             </div>
           </div>
           <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#C04A2A; margin-top:8px; padding-top:6px; border-top:1px solid #eee; font-weight:600;">Dense Urban markets carry the highest PE concentration in the dataset (mean 1.32 PE-affiliated neighbors per target). Mid-Density: the same score profile, without the competitive pressure.</div>
@@ -1313,7 +1313,7 @@ body {
       </div>
       <div style="padding:12px 14px; background:#F4F2EE; border-top:2px solid #3A6090;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#3A6090; margin-bottom:5px;">Mid-Density is where the score and the competition diverge. That divergence is where CDS operates.</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#333; line-height:1.6;">Secondary cities and growing suburban markets score within 8 points of major metros. They hold 7,156 targets, 55% of the strict-medspa universe. PE has averaged only 0.79 neighbors per target here  -  40% fewer than Dense Urban. PE presence is lower in this tier than any other in the dataset. CDS identifies and sequences outreach into these markets before that changes.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#333; line-height:1.6;">Secondary cities and growing suburban markets score within 8 points of major metros. They hold 7,156 targets, 55% of the strict-medspa universe. PE has averaged only 0.79 neighbors per target here  -  40% fewer than Dense Urban. PE presence is lower in this tier than any other in the dataset. This reflects current competitive structure; the report does not measure rate of change. CDS identifies and sequences outreach into these markets.</div>
       </div>
     </div>
 
@@ -1340,7 +1340,7 @@ body {
       <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#888;">Nearest Supply Analysis</div>
     </div>
 
-    <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.4px; margin-bottom:5px;">52.5% of Targets Have a Competitor Within Half a Mile.</div>
+    <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.4px; margin-bottom:5px;">52.5% of Targets Have a Competitor Within Half a Mile (all competitor types, including PE-owned).</div>
     <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#555; line-height:1.7; margin-bottom:8px;">Nearest supply measures the distance to the closest competitor for every target. Tight proximity confirms consumer demand. Wide proximity signals isolation or whitespace. Supply gap measures how many independent competitors exist nearby relative to PE consolidation. Together they define whether a market is worth entering and whether the entry window is still open.</div>
 
     <!-- TWO COLUMNS: Proximity distribution left, Supply gap right -->
@@ -1557,7 +1557,7 @@ body {
     </div>
 
     <!-- Headline full-width -->
-    <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.4px; margin-bottom:14px;">8.2% PE-affiliated location penetration across STOC's dataset. 76.9% of CBSAs untouched. The consolidation window is open. Entry economics in zero-PE CBSAs remain materially different from consolidated markets.</div>
+    <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.4px; margin-bottom:14px;">8.2% PE-affiliated location penetration across STOC's dataset. 76.9% of CBSAs untouched. The consolidation window is open. STOC score differentials indicate structurally different competitive conditions in zero-PE CBSAs versus consolidated markets.</div>
 
     <!-- HISTOGRAM: Full width at top -->
     <div style="border-top:1px solid #ddd; padding-top:8px; margin-bottom:8px;">
@@ -1726,7 +1726,7 @@ body {
 
         <div>
           <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0D1B2F; margin-bottom:10px;">The Pre-Consolidation Window</div>
-          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.7;">These are markets with sufficient target density, verified supply gaps, and no incumbent PE pressure. Zero-PE CBSAs score 14.1 points higher than PE-entered markets on average. De novo remains a viable complement to acquisition in these markets.</div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.7;">These are markets with sufficient target density, verified supply gaps, and no incumbent PE pressure. Zero-PE CBSAs score 14.1 points higher than PE-entered markets on average. De novo warrants consideration in these markets given verified supply gaps and low PE pressure.</div>
         </div>
 
         <div>
