@@ -773,10 +773,10 @@ body {
     </div>
 
     <!-- Intro -->
-    <div style="display:grid; grid-template-columns:2fr 3fr; gap:40px; margin-bottom:8px;">
+    <div style="display:grid; grid-template-columns:2fr 3fr; gap:40px; margin-bottom:6px;">
       <div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.2px; margin-bottom:12px;">Every metric in this document is produced by a live intelligence pipeline, not a static dataset. Data vintage: Q1 2026; pipeline is refreshed continuously.</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#555; line-height:1.7;">The analysis that follows is generated from STOC's Corporate Development Support (CDS) intelligence layer. Each target in the dataset is scored, classified, and refreshed continuously. What follows defines what that means in practice.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.2px; margin-bottom:12px;">Every metric in this document is produced by a live intelligence pipeline, not a static dataset.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#555; line-height:1.7;">Data vintage: Q1 2026; pipeline refreshed continuously. Generated from STOC's CDS intelligence layer. Each target is scored, classified, and refreshed continuously.</div>
       </div>
       <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#333; line-height:1.7;">STOC's core dataset of 12,920 licensed medical spas sits within a broader universe of U.S. locations offering medical-grade aesthetic services. For context, the American Med Spa Association enumerates approximately 10,488 licensed medical spas (AmSpa, 2024). The difference is intentional. STOC maps all U.S. locations offering medical-grade aesthetic services under physician supervision, including standalone medical spas, cosmetic dermatology practices with aesthetic service lines, and plastic surgery clinics with non-surgical revenue. This broader scope reflects how PE platforms actually build acquisitions - routinely including adjacent practice types that operate economically as med spas regardless of licensure classification. The STOC score formula applies uniformly across all three practice types; subtype filtering is available in the CDS pipeline but not reflected in the scores shown here.</div>
     </div>
@@ -789,7 +789,7 @@ body {
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#1275B0; margin-bottom:10px;">Dataset Scope</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:3px;">12,920</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:12px;">Tracked medical-aesthetics locations, Q1 2026 ²</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6; margin-bottom:10px;">Base universe: Ownership = Target AND MedSpa Y/N = Y. Conservative in exclusion criteria (nail, hair, tattoo, IV/drip, sports/rehab, dental, massage, chiro, and similar non-core concepts are excluded), not in universe size  -  the 12,920 is intentionally broader than AmSpa's 10,488. Spans 640 CBSAs nationwide.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6; margin-bottom:10px;">Base universe: Ownership = Target AND MedSpa Y/N = Y. Excludes nail, hair, tattoo, IV/drip, sports/rehab, dental, massage, chiro. Broader than AmSpa's 10,488 (which uses a narrower definition). 640 CBSAs nationwide.</div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Outreach-ready targets</span><span style="color:#1275B0; font-weight:600;">4,863</span></div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Priority tier (STOC &ge;70)</span><span style="color:#1275B0; font-weight:600;">5,898</span></div>
         <div style="border-top:1px solid #eee; border-bottom:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Data points per target</span><span style="color:#1275B0; font-weight:600;">79</span></div>
@@ -799,7 +799,7 @@ body {
       <!-- Box 2: DMS  -  Digital Maturity Score -->
       <div style="padding:10px 18px; border-right:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#1275B0; margin-bottom:6px;">Digital Maturity Score</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:12px; line-height:1.5;">Composite directional index of 8 signals per strict-medspa target in Zone 1 and Zone 2. Used for comparative screening. Component weights are proprietary; interpret as directional.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:12px; line-height:1.5;">Directional index of 8 signals per Z1/Z2 target. Comparative screening only. Weights proprietary.</div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#aaa; display:flex; justify-content:space-between;"><span>Zone Context</span><span style="color:#aaa; font-size:8px;">Z1 / Z2 filter  -  not a scored signal</span></div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Review Count</span><span style="color:#555; font-size:8px;">Google review volume</span></div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Avg Rating</span><span style="color:#555; font-size:8px;">Google star rating</span></div>
@@ -819,7 +819,7 @@ body {
         <div style="display:flex; flex-direction:column; gap:8px;">
           <div style="background:#F4F2EE; padding:8px 10px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#0D1B2F; margin-bottom:2px;">Geo Opportunity Index &nbsp;<span style="color:#1275B0; font-weight:800;">0 – 50 pts</span></div>
-            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">Proprietary normalized supply-gap measure: local supply, expected supply, and population-adjusted market context, clipped to [-1, 1]. Contribution = (GOI + 1) × 25. GOI of 0.8 = 45 pts. Underlying inputs are proprietary; treat as directional.</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">Proprietary supply-gap signal clipped to [-1, 1]. Contribution = (GOI + 1) × 25. Example: GOI 0.8 = 45 pts; GOI 0 = 25 pts. Inputs proprietary; directional only.</div>
           </div>
           <div style="background:#F4F2EE; padding:8px 10px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#0D1B2F; margin-bottom:2px;">Target Neighbors &nbsp;<span style="color:#1275B0; font-weight:800;">0 – 20 pts</span></div>
@@ -827,11 +827,11 @@ body {
           </div>
           <div style="background:#F4F2EE; padding:8px 10px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#0D1B2F; margin-bottom:2px;">PE Neighbors Penalty &nbsp;<span style="color:#C04A2A; font-weight:800;">20 – 0 pts</span></div>
-            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">PE-owned competitors within zone. Formula: MAX(0, 20 − 4 × PE Neighbors), capped at 5 neighbors. Note: 4 neighbors = 4 pts, 5 neighbors = 0 pts  -  a discrete 4-point cliff at exactly 5 PE neighbors.</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">PE-owned competitors within zone. MAX(0, 20 − 4 × PE Neighbors), capped at 5. Note: 4 neighbors = 4 pts; 5 neighbors = 0 pts (discrete cliff).</div>
           </div>
           <div style="background:#F4F2EE; padding:8px 10px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#0D1B2F; margin-bottom:2px;">Cannibalization Risk &nbsp;<span style="color:#1275B0; font-weight:800;">0 – 10 pts</span></div>
-            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">Algorithmic: Risk = TN + (1.5 × PE Neighbors). Bands: None=0, Low&lt;3, Med&lt;6, High≥6. Steps are intentionally non-uniform; High penalizes direct platform overlap disproportionately.</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">Risk = TN + (1.5 × PE Neighbors). Bands: None=0, Low&lt;3, Med&lt;6, High≥6. Non-uniform steps intentional. Note: PE Neighbors also reduces PE Neighbors Penalty directly; PE pressure affects score through two components.</div>
           </div>
         </div>
       </div>
@@ -1035,7 +1035,7 @@ body {
         </div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:600; color:#888; margin-bottom:1px;">Largest CBSA by Target Count</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; margin-bottom:4px;">Atlanta-Sandy Springs, GA</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority markets: 7<br>Zero-PE CBSAs: 205</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority CBSAs (Avg STOC ≥70, ≥25 targets): 7<br>Zero-PE CBSAs: 205</div>
       </div>
 
       <!-- MIDWEST -->
@@ -1065,7 +1065,7 @@ body {
         </div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:600; color:#888; margin-bottom:1px;">Largest CBSA by Target Count</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; margin-bottom:4px;">Chicago-Naperville-Elgin, IL</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority markets: 0<br>Zero-PE CBSAs: 161</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority CBSAs (Avg STOC ≥70, ≥25 targets): 0<br>Zero-PE CBSAs: 161</div>
       </div>
 
       <!-- WEST -->
@@ -1096,7 +1096,7 @@ body {
         </div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:600; color:#888; margin-bottom:1px;">Largest CBSA by Target Count</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; margin-bottom:4px;">Phoenix-Mesa-Chandler, AZ</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority markets: 1<br>Zero-PE CBSAs: 85</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority CBSAs (Avg STOC ≥70, ≥25 targets): 1<br>Zero-PE CBSAs: 85</div>
       </div>
 
       <!-- NORTHEAST -->
@@ -1127,7 +1127,7 @@ body {
         </div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:600; color:#888; margin-bottom:1px;">Largest CBSA by Target Count</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; margin-bottom:4px;">Pittsburgh, PA</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority markets: 1<br>Zero-PE CBSAs: 41</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority CBSAs (Avg STOC ≥70, ≥25 targets): 1<br>Zero-PE CBSAs: 41</div>
       </div>
     </div>
 
@@ -1720,13 +1720,13 @@ body {
           <div style="padding-left:20px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:32px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:5px;">-14 pts</div>
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; color:#333; margin-bottom:4px;">Avg. STOC score drop, once PE arrives</div>
-            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#888; line-height:1.6;">Zero-PE CBSAs score 14.1 points higher than PE-entered markets overall. Once PE enters, scores compress into the 55.8 to 58.3 range regardless of penetration level.</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#888; line-height:1.6;">Zero-PE CBSAs score 14.1 points higher than PE-entered markets overall (CBSA-level simple average; each CBSA weighted equally regardless of target count). Once PE enters, scores compress into the 55.8 to 58.3 range regardless of penetration level.</div>
           </div>
         </div>
 
         <div>
           <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0D1B2F; margin-bottom:10px;">The Pre-Consolidation Window</div>
-          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.7;">These are markets with sufficient target density, verified supply gaps, and no incumbent PE pressure. Zero-PE CBSAs score 14.1 points higher than PE-entered markets on average. De novo warrants consideration in these markets given verified supply gaps and low PE pressure.</div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.7;">These are markets with sufficient target density, verified supply gaps, and no incumbent PE pressure. Zero-PE CBSAs score 14.1 points higher than PE-entered markets on average (CBSA-weighted). De novo warrants consideration in these markets given verified supply gaps and low PE pressure.</div>
         </div>
 
         <div>
@@ -1974,7 +1974,7 @@ body {
       <div style="border:1px solid #ddd; border-top:3px solid #7A90A8; display:flex; flex-direction:column;">
         <div style="background:#F5F5F5; padding:14px 18px 12px; border-bottom:1px solid #e8e8e8;">
           <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#555; margin-bottom:6px;">Monitor Only</div>
-          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:8px;">Lower STOC or negative gap or high PE penetration</div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:8px;">Lower STOC or negative gap or high PE penetration. Note: Atlanta placed here on composite basis  -  large market size and PE clustering at sub-CBSA level offset positive headline figures.</div>
           <div style="display:flex; flex-direction:column; gap:3px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333;">· Economics do not clear current activation thresholds</div>
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333;">· High PE rate or oversupplied conditions compress acquisition returns</div>
@@ -2080,7 +2080,7 @@ body {
       <div style="padding:16px 18px; border-bottom:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#1275B0; margin-bottom:8px;">Instagram Post Count</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:26px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:2px;">308</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#888; margin-bottom:10px;">median posts per active account</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#888; margin-bottom:10px;">median lifetime posts per active account (cumulative, not a 90-day figure)</div>
         <div style="display:flex; flex-direction:column; gap:5px; border-top:1px solid #eee; padding-top:8px;">
           <div><div style="display:flex; justify-content:space-between; margin-bottom:2px;"><div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555;">Under 25 posts</div><div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#0D1B2F;">8.2%</div></div><div style="height:4px; background:#eee;"><div style="height:4px; background:#0D1B2F; width:8.2%;"></div></div></div>
           <div><div style="display:flex; justify-content:space-between; margin-bottom:2px;"><div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555;">25 to 100 posts</div><div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#1A3A5C;">15.2%</div></div><div style="height:4px; background:#eee;"><div style="height:4px; background:#1A3A5C; width:15.2%;"></div></div></div>
@@ -2400,7 +2400,7 @@ body {
     <div style="margin-bottom:40px;">
       <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:32px; font-weight:800; color:#1275B0; line-height:1.2; letter-spacing:-0.5px; margin-bottom:20px;">The Window Is Open.<br>The Question Is Whether<br>You Are Moving Through It.</div>
       <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; font-weight:700; color:#0D1B2F; line-height:1.4; margin-bottom:12px;">STOC Advisory builds and executes acquisition pipelines for PE-backed platforms entering the U.S. medical aesthetics market.</div>
-      <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#333; line-height:1.7; max-width:560px;">76.9% of CBSAs have no PE presence (18.9% of tracked targets are located in those markets). The 12,920 targets in this dataset are scored, ranked, and filterable by geography, density type, and sector. Zero-PE CBSAs score 14.1 points higher than PE-entered markets on average. CDS activates outreach within two weeks of engagement.</div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#333; line-height:1.7; max-width:560px;">76.9% of CBSAs have no PE presence (18.9% of tracked targets are located in those markets). The 12,920 targets in this dataset are scored, ranked, and filterable by geography, density type, and sector. Zero-PE CBSAs score 14.1 points higher than PE-entered markets on average. CDS targets outreach activation within two weeks of engagement.</div>
     </div>
 
     <!-- Contacts -->
