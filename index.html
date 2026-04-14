@@ -785,8 +785,8 @@ body {
       <div style="padding:16px 18px 16px 0; border-right:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#1275B0; margin-bottom:10px;">Dataset Scope</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:3px;">12,920</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:12px;">Licensed medical spas tracked, Q1 2026</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6; margin-bottom:10px;">Base universe: Ownership = Target AND Strict Medspa = Y. Spans 640 CBSAs across all 50 states.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:12px;">Licensed medical spas tracked, Q1 2026 ²</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6; margin-bottom:10px;">Base universe: Ownership = Target AND MedSpa Y/N = Y. Conservative licensed-medspa screen excluding nail, hair, tattoo, IV/drip, sports/rehab, dental, massage, chiro, and similar non-core concepts. Spans 640 CBSAs across all 50 states.</div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Outreach-ready targets</span><span style="color:#1275B0; font-weight:600;">4,863</span></div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Priority tier (STOC &ge;70)</span><span style="color:#1275B0; font-weight:600;">5,898</span></div>
         <div style="border-top:1px solid #eee; border-bottom:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Data points per target</span><span style="color:#1275B0; font-weight:600;">79</span></div>
@@ -796,7 +796,7 @@ body {
       <!-- Box 2: DMS  -  Digital Maturity Score -->
       <div style="padding:16px 18px; border-right:1px solid #ddd; border-bottom:1px solid #eee;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#1275B0; margin-bottom:10px;">Digital Maturity Score</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:12px; line-height:1.5;">Composite of 8 signals measured for each strict-medspa target in Zone 1 and Zone 2. Reported separately from the STOC score.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#555; margin-bottom:12px; line-height:1.5;">Composite of 8 signals measured for each strict-medspa target in Zone 1 and Zone 2. Reported separately from the STOC score. Signal weights are proprietary and not disclosed.</div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Target Zone</span><span style="color:#555; font-size:8px;">Z1 / Z2 / Z3 / Z4</span></div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Review Count</span><span style="color:#555; font-size:8px;">Google review volume</span></div>
         <div style="border-top:1px solid #eee; padding:5px 0; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; display:flex; justify-content:space-between;"><span>Avg Rating</span><span style="color:#555; font-size:8px;">Google star rating</span></div>
@@ -816,7 +816,7 @@ body {
         <div style="display:flex; flex-direction:column; gap:8px;">
           <div style="background:#F4F2EE; padding:8px 10px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#0D1B2F; margin-bottom:2px;">Geo Opportunity Index &nbsp;<span style="color:#1275B0; font-weight:800;">0 – 50 pts</span></div>
-            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">Supply-demand gap signal scaled from -1 to 1, mapped to a 0 to 50 point contribution.</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.4;">STOC's proprietary normalized supply-gap model, built from local supply, expected supply, and population-adjusted market context. Clipped to [-1, 1]; contribution = (GOI + 1) × 25.</div>
           </div>
           <div style="background:#F4F2EE; padding:8px 10px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#0D1B2F; margin-bottom:2px;">Target Neighbors &nbsp;<span style="color:#1275B0; font-weight:800;">0 – 20 pts</span></div>
@@ -874,9 +874,9 @@ body {
         <tbody>
           <tr style="border-bottom:1px solid #eee;">
             <td style="padding:6px 10px 6px 0; color:#333;">Geo Opportunity Index</td>
-            <td style="padding:6px 10px; color:#555;">Supply-demand gap scaled from -1 to 1</td>
+            <td style="padding:6px 10px; color:#555;">Normalized supply-gap signal: (GOI + 1) × 25</td>
             <td style="padding:6px 10px; text-align:right; color:#0D1B2F; font-weight:700;">0 – 50</td>
-            <td style="padding:6px 0 6px 10px; color:#555;">Higher gap = higher score</td>
+            <td style="padding:6px 0 6px 10px; color:#555;">GOI of 0.8 = 45 pts; GOI of 0 = 25 pts</td>
           </tr>
           <tr style="border-bottom:1px solid #eee;">
             <td style="padding:6px 10px 6px 0; color:#333;">Target Neighbors</td>
@@ -901,7 +901,7 @@ body {
     </div>
 
   </div>
-  <div style="padding:0 44px 8px; font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#aaa; flex-shrink:0;">¹ AmSpa, 2024 Medical Spa State of the Industry Report &nbsp;&nbsp;&nbsp; Score tiers total 12,886 scored targets; 34 excluded due to incomplete geography or population data.</div>
+  <div style="padding:0 44px 8px; font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#aaa; flex-shrink:0;">¹ AmSpa, 2024 Medical Spa State of the Industry Report &nbsp;&nbsp;&nbsp; ² "Licensed medical spa" is used colloquially for practices providing medical aesthetic services under physician oversight; no uniform formal licensing category exists across all 50 states. &nbsp;&nbsp;&nbsp; Score tiers total 12,886 scored targets; 34 excluded due to incomplete geography or population data.</div>
   <div class="pg-ftr"><span>5</span></div>
 
 </div>
@@ -936,11 +936,12 @@ body {
       </div>
       <div style="padding:14px 16px; border-right:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:4px;">8.2%</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; color:#333; margin-bottom:2px;">PE Penetration, National</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; color:#333; margin-bottom:2px;">PE-Affiliated Penetration</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:7px; color:#aaa; line-height:1.4;">Share of observed locations classified as PE Owned relative to the combined universe of strict-medspa targets and PE Owned locations.</div>
       </div>
       <div style="padding:14px 16px; border-right:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:4px;">640</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; color:#333; margin-bottom:2px;">CBSAs Mapped, Q1 2026</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; color:#333; margin-bottom:2px;">CBSAs with Identified Targets ³</div>
       </div>
       <div style="padding:14px 16px;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:4px;">37.6%</div>
@@ -1062,7 +1063,7 @@ body {
         </div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:600; color:#888; margin-bottom:1px;">Top CBSA by target count</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; margin-bottom:4px;">Chicago-Naperville-Elgin, IL</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority markets: 25<br>Zero-PE CBSAs: 161</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority markets: 0<br>Zero-PE CBSAs: 161</div>
       </div>
 
       <!-- WEST -->
@@ -1070,7 +1071,7 @@ body {
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; font-weight:800; color:#3A6090; margin-bottom:6px;">West</div>
         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px; padding-bottom:3px; border-bottom:1px solid rgba(0,0,0,0.06);">
           <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; font-weight:600;">CBSAs</div>
-          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; font-weight:700; color:#3A6090;">135</div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; font-weight:700; color:#3A6090;">125</div>
         </div>
         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px; padding-bottom:3px; border-bottom:1px solid rgba(0,0,0,0.06);">
           <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; font-weight:600;">Targets</div>
@@ -1093,7 +1094,7 @@ body {
         </div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:600; color:#888; margin-bottom:1px;">Top CBSA by target count</div>
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; margin-bottom:4px;">Phoenix-Mesa-Chandler, AZ</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority markets: 16<br>Zero-PE CBSAs: 85</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Priority markets: 1<br>Zero-PE CBSAs: 85</div>
       </div>
 
       <!-- NORTHEAST -->
@@ -1159,9 +1160,9 @@ body {
           </tr>
           <tr style="border-bottom:1px solid #eee; background:rgba(233,208,201,0.2);">
             <td style="padding:5px 6px 5px 0; font-size:9px; font-weight:700; color:#3A6090;"><span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#cda898; margin-right:4px; vertical-align:middle; flex-shrink:0;"></span>West</td>
-            <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">135</td> <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">3,655</td> <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">28.3%</td>
+            <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">125</td> <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">3,655</td> <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">28.3%</td>
             <td style="padding:5px 6px; text-align:right; color:#3A6090; font-weight:700; font-size:9px;">57.4</td> <td style="padding:5px 6px; text-align:right; color:#3A6090; font-weight:700; font-size:9px;">8.0%</td>
-            <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">27.1 / CBSA</td> <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">85</td>
+            <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">29.2 / CBSA</td> <td style="padding:5px 6px; text-align:right; color:#333; font-weight:400; font-size:9px;">85</td>
           </tr>
           <tr style="background:rgba(202,210,222,0.2);">
             <td style="padding:5px 6px 5px 0; font-size:9px; font-weight:700; color:#2a4a6a;"><span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#6a7a9a; margin-right:4px; vertical-align:middle; flex-shrink:0;"></span>Northeast</td>
@@ -1177,7 +1178,7 @@ body {
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; flex-shrink:0;">
       <div style="background:#fff; padding:11px 16px; border-top:2px solid #0D1B2F; border:1px solid #e8e8e8; border-top:2px solid #0D1B2F;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#0D1B2F; margin-bottom:6px;">South + Midwest Priority</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6;">South and Midwest together hold 57.8% of all tracked targets and carry the highest concentration of Priority-tier CBSAs in the dataset. Both regions carry lower PE rates than the West and Northeast, with more zero-PE CBSAs than any other pairing. Sequenced deployment here reaches the largest independent pipeline at the lowest competitive cost.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6;">South and Midwest together hold 57.8% of all tracked targets (as % of the full 12,920 universe, including 139 targets not assigned to a Census region). The South holds 7 of the 9 nationally qualifying priority CBSAs (Avg STOC ≥ 70, at least 25 strict-medspa targets). Both regions carry lower PE rates than the West and Northeast, with more zero-PE CBSAs than any other pairing. Sequenced deployment here reaches the largest independent pipeline at the lowest competitive cost.</div>
       </div>
       <div style="background:#fff; padding:11px 16px; border-top:2px solid #2a4a6a; border:1px solid #e8e8e8; border-top:2px solid #2a4a6a;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#2a4a6a; margin-bottom:6px;">Northeast + West: Scored Entry Only</div>
@@ -1186,7 +1187,7 @@ body {
     </div>
 
   </div>
-  <div style="padding:0 44px 8px; font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#aaa; flex-shrink:0;">Regional totals sum to 12,781. 139 strict-medspa targets do not have an assigned Census region in the current dataset.</div>
+  <div style="padding:0 44px 8px; font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#aaa; flex-shrink:0;">Regional totals sum to 12,781. 139 strict-medspa targets do not have an assigned Census region. &nbsp;&nbsp;&nbsp; ³ 640 = CBSAs containing at least one identified target. OMB Bulletin 23-01 (2023) defines 925 total CBSAs across the U.S.</div>
   <div class="pg-ftr"><span>6</span></div>
 
 </div>
@@ -1471,7 +1472,7 @@ body {
 
     <!-- SUPPLY GAP BY REGION x DENSITY TYPE matrix -->
     <div style="flex-shrink:0; margin-bottom:12px;">
-      <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#888; letter-spacing:2px; text-transform:uppercase; margin-bottom:10px;">Average Supply Gap by Region and Density Type &nbsp;<span style="font-weight:400; text-transform:none; letter-spacing:0; color:#aaa;">Geo Opportunity Index x 100. Positive = demand exceeds local supply (undersupplied). Negative = oversupplied. Same scale used on page 10.</span></div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#888; letter-spacing:2px; text-transform:uppercase; margin-bottom:10px;">Average Supply Gap by Region and Density Type &nbsp;<span style="font-weight:400; text-transform:none; letter-spacing:0; color:#aaa;">Geo Opportunity Index x 100. Positive = demand exceeds local supply (undersupplied). Negative = oversupplied. Same scale used on page 10. Values shown are regional averages; individual CBSA-level scores may differ  -  249 suburban CBSAs carry positive supply-gap signals at the CBSA level despite negative regional averages.</span></div>
 
       <table style="width:100%; border-collapse:collapse; font-family:'Plus Jakarta Sans',sans-serif; font-size:9px;">
         <thead>
@@ -1519,7 +1520,7 @@ body {
     <div style="margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:8px; flex-shrink:0;">
       <div style="padding:12px 16px; border-left:3px solid #0D1B2F; background:#F4F2EE;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; margin-bottom:3px;">Where consolidation has arrived</div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6;">In 21.2% of CBSAs with PE data available (132 of 624), at least one PE-affiliated operator has been identified. Average nearest competitor distance in those markets is 0.46 mi, with tighter competition, higher seller awareness, and compressed multiples. The supply gap still exists but is narrowing.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.6;">In 23.1% of tracked CBSAs (148 of 640), at least one PE-affiliated operator has been identified. Average nearest competitor distance in those markets is 0.46 mi, with tighter competition, higher seller awareness, and compressed multiples. The supply gap still exists but is narrowing.</div>
       </div>
       <div style="padding:12px 16px; border-left:3px solid #1275B0; background:#F4F2EE;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#1275B0; margin-bottom:3px;">What this means for entry timing</div>
@@ -1556,8 +1557,8 @@ body {
 
     <!-- HISTOGRAM: Full width at top -->
     <div style="border-top:1px solid #ddd; padding-top:12px; margin-bottom:12px;">
-      <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#888; margin-bottom:3px; letter-spacing:1px; text-transform:uppercase;">Figure 3</div><div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0D1B2F; margin-bottom:4px;">PE Penetration Distribution: 624 CBSAs with PE Data</div>
-      <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#aaa; margin-bottom:10px;">624 CBSAs have at least one target with PE data available. 16 CBSAs are excluded from this chart due to missing PE classification data.</div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; font-weight:700; color:#888; margin-bottom:3px; letter-spacing:1px; text-transform:uppercase;">Figure 3</div><div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0D1B2F; margin-bottom:4px;">PE Penetration Distribution: 640 CBSAs</div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#aaa; margin-bottom:10px;">All 640 CBSAs with identified targets are included. 492+32+74+42 = 640.</div>
       <svg viewBox="0 0 706 248" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block;">
         <!-- Axes -->
         <line x1="44" y1="8" x2="44" y2="200" stroke="#ddd" stroke-width="1"/>
@@ -1600,12 +1601,12 @@ body {
         <text x="485" y="216" font-family="Plus Jakarta Sans,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="700">6-15% PE</text>
         <text x="485" y="228" font-family="Plus Jakarta Sans,sans-serif" font-size="9"  fill="#888" text-anchor="middle">Selective entry</text>
 
-        <!-- Bar 3: 26 CBSAs (15%+ PE) -->
-        <rect x="580" y="197" width="120" height="3"  fill="#deb08e"/>
-        <rect x="580" y="195" width="120" height="2"  fill="#85c4c1"/>
-        <rect x="580" y="193" width="120" height="2"  fill="#cda898"/>
-        <rect x="580" y="190" width="120" height="3"  fill="#9aaac4"/>
-        <text x="640" y="186" font-family="Plus Jakarta Sans,sans-serif" font-size="11" font-weight="800" fill="#555" text-anchor="middle">26</text>
+        <!-- Bar 3: 42 CBSAs (15%+ PE) -->
+        <rect x="580" y="195" width="120" height="5"  fill="#deb08e"/>
+        <rect x="580" y="192" width="120" height="3"  fill="#85c4c1"/>
+        <rect x="580" y="189" width="120" height="3"  fill="#cda898"/>
+        <rect x="580" y="184" width="120" height="5"  fill="#9aaac4"/>
+        <text x="640" y="182" font-family="Plus Jakarta Sans,sans-serif" font-size="11" font-weight="800" fill="#555" text-anchor="middle">42</text>
         <text x="640" y="216" font-family="Plus Jakarta Sans,sans-serif" font-size="10" fill="#555" text-anchor="middle" font-weight="700">15%+ PE</text>
         <text x="640" y="228" font-family="Plus Jakarta Sans,sans-serif" font-size="9"  fill="#888" text-anchor="middle">Late stage</text>
       </svg>
@@ -1629,7 +1630,7 @@ body {
             <tr style="border-bottom:1.5px solid #0D1B2F;">
               <th style="text-align:left; padding:7px 8px 7px 0; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#0D1B2F;">PE Rate</th>
               <th style="text-align:right; padding:7px 8px; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#0D1B2F;">CBSAs</th>
-              <th style="text-align:right; padding:7px 8px; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#0D1B2F;">% of 624</th>
+              <th style="text-align:right; padding:7px 8px; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#0D1B2F;">% of 640</th>
               <th style="text-align:right; padding:7px 8px; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#0D1B2F;">Avg. STOC</th>
               <th style="text-align:left; padding:7px 0 7px 8px; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#0D1B2F;">Read</th>
             </tr>
@@ -1638,28 +1639,28 @@ body {
             <tr style="border-bottom:1px solid #eee;">
               <td style="padding:11px 8px 11px 0; color:#0D1B2F; font-weight:600;">0%</td>
               <td style="padding:11px 8px; text-align:right; color:#555;">492</td>
-              <td style="padding:11px 8px; text-align:right; color:#0D1B2F; font-weight:700;">78.8%</td>
+              <td style="padding:11px 8px; text-align:right; color:#0D1B2F; font-weight:700;">76.9%</td>
               <td style="padding:11px 8px; text-align:right; color:#0D1B2F; font-weight:700;">71.7</td>
               <td style="padding:11px 0 11px 8px; color:#333; font-size:9px;">Full opportunity</td>
             </tr>
             <tr style="border-bottom:1px solid #eee;">
               <td style="padding:11px 8px 11px 0; color:#333; font-weight:600;">1-5%</td>
               <td style="padding:11px 8px; text-align:right; color:#555;">32</td>
-              <td style="padding:11px 8px; text-align:right; color:#333; font-weight:600;">5.1%</td>
+              <td style="padding:11px 8px; text-align:right; color:#333; font-weight:600;">5.0%</td>
               <td style="padding:11px 8px; text-align:right; color:#333; font-weight:600;">55.8</td>
               <td style="padding:11px 0 11px 8px; color:#333; font-size:9px;">Window open</td>
             </tr>
             <tr style="border-bottom:1px solid #eee;">
               <td style="padding:11px 8px 11px 0; color:#555;">6-15%</td>
               <td style="padding:11px 8px; text-align:right; color:#888;">74</td>
-              <td style="padding:11px 8px; text-align:right; color:#555;">11.9%</td>
+              <td style="padding:11px 8px; text-align:right; color:#555;">11.6%</td>
               <td style="padding:11px 8px; text-align:right; color:#555;">58.3</td>
               <td style="padding:11px 0 11px 8px; color:#555; font-size:9px;">Selective only</td>
             </tr>
             <tr>
               <td style="padding:11px 8px 11px 0; color:#aaa;">15%+</td>
-              <td style="padding:11px 8px; text-align:right; color:#aaa;">26</td>
-              <td style="padding:11px 8px; text-align:right; color:#aaa;">4.2%</td>
+              <td style="padding:11px 8px; text-align:right; color:#aaa;">42</td>
+              <td style="padding:11px 8px; text-align:right; color:#aaa;">6.6%</td>
               <td style="padding:11px 8px; text-align:right; color:#aaa;">57.5</td>
               <td style="padding:11px 0 11px 8px; color:#aaa; font-size:9px;">Late stage</td>
             </tr>
@@ -1709,24 +1710,24 @@ body {
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; border-bottom:1px solid #ddd; padding-bottom:18px;">
           <div style="padding-right:20px; border-right:1px solid #eee;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:32px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:5px;">76.9%</div>
-            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; color:#333; margin-bottom:4px;">of all 640 tracked CBSAs have zero PE presence</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; color:#333; margin-bottom:4px;">of CBSAs have zero PE presence (492 of 640)</div>
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#888; line-height:1.6;">Entry multiples in fragmented markets have historically ranged from 4-8x EBITDA depending on market maturity and PE density.</div>
           </div>
           <div style="padding-left:20px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:32px; font-weight:800; color:#0D1B2F; line-height:1; margin-bottom:5px;">-14 pts</div>
             <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:600; color:#333; margin-bottom:4px;">Avg. STOC score drop, once PE arrives</div>
-            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#888; line-height:1.6;">CBSAs with 15%+ PE penetration score 14 points lower than zero-PE markets. Seller expectations have moved and multiples are compressed.</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#888; line-height:1.6;">Zero-PE CBSAs score 14.2 points higher than 15%+ PE CBSAs (71.7 vs. 57.5). Seller expectations have moved and multiples are compressed.</div>
           </div>
         </div>
 
         <div>
           <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0D1B2F; margin-bottom:10px;">The Pre-Consolidation Window</div>
-          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.7;">The 0% bucket is not simply undiscovered territory. These are markets with sufficient target density, verified supply gaps, and no incumbent PE pressure. Entry economics in a 0% CBSA are structurally different from a 6-15% CBSA: seller expectations are lower, multiples are uncompressed, and de novo remains a viable complement to acquisition.</div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.7;">The 0% bucket is not simply undiscovered territory. These are markets with sufficient target density, verified supply gaps, and no incumbent PE pressure. Entry economics in a 0% CBSA are structurally different from a 6-15% CBSA: seller expectations are lower, multiples are uncompressed, and de novo remains a viable complement to acquisition. Note: the primary scoring comparison is 0% vs. 15%+ PE CBSAs, where the gap is 14.2 points. Mid-range buckets (1-5% and 6-15%) reflect markets where PE has begun entering but has not yet fully compressed scores.</div>
         </div>
 
         <div>
           <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0D1B2F; margin-bottom:10px;">First-Mover Implication</div>
-          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.7;">In 21.2% of CBSAs with PE data available (132 of 624), PE entry has begun compressing multiples. CDS tracks competitive arrival in real time across all 640 markets, flagging which 0% CBSAs are receiving inbound sponsor interest before a transaction closes.</div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; color:#333; line-height:1.7;">In 23.1% of tracked CBSAs (148 of 640), PE entry has begun compressing multiples. CDS tracks competitive arrival in real time across all 640 markets, flagging which 0% CBSAs are receiving inbound sponsor interest before a transaction closes.</div>
         </div>
       </div>
 
@@ -2026,7 +2027,7 @@ body {
     </div><!-- end 2x2 grid -->
 
   </div>
-
+  <div style="padding:0 44px 8px; font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#aaa; flex-shrink:0;">CBSA names abbreviated for display. Full OMB designations available on request.</div>
   <div class="pg-ftr"><span>10</span></div>
 
 </div>
