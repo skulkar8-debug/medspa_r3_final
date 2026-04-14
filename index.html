@@ -1221,7 +1221,7 @@ body {
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid #ddd; border-top:2px solid #0D1B2F; margin-bottom:10px; flex-shrink:0;">
       <div style="padding:10px 16px; border-right:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#0D1B2F; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">Dense Urban &nbsp;<span style="font-size:8px; font-weight:400; color:#888; text-transform:none; letter-spacing:0;">4,515 targets</span></div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Major metro and core urban markets. Population 50K+. Note: STOC scores are not directly cross-tier comparable  -  wider zone radii in lower-density tiers count Target Neighbors across a larger catchment. Z1: 0-2 mi &nbsp;·&nbsp; Z2: 2-5 mi &nbsp;·&nbsp; Z3: 5-10 mi &nbsp;·&nbsp; Z4: 10-15 mi. Max cap 15 miles applied to dense metros (NYC, Boston, DC, SF) to prevent overstatement of tuck-in range.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Major metro and core urban markets. Population 50K+. Z1: 0-2 mi &nbsp;·&nbsp; Z2: 2-5 mi &nbsp;·&nbsp; Z3: 5-10 mi &nbsp;·&nbsp; Z4: 10-15 mi. Max cap 15 miles applied to dense metros (NYC, Boston, DC, SF) to prevent overstatement of tuck-in range.</div>
       </div>
       <div style="padding:10px 16px; border-right:1px solid #ddd;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#1A3A5C; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">Mid-Density &nbsp;<span style="font-size:8px; font-weight:400; color:#888; text-transform:none; letter-spacing:0;">7,156 targets</span></div>
@@ -1229,7 +1229,7 @@ body {
       </div>
       <div style="padding:10px 16px;">
         <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:9px; font-weight:700; color:#3A6090; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">Suburban &nbsp;<span style="font-size:8px; font-weight:400; color:#888; text-transform:none; letter-spacing:0;">1,249 targets</span></div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Smaller surrounding and non-core markets below mid-density threshold. Z1: 0-5 mi &nbsp;·&nbsp; Z2: 5-10 mi &nbsp;·&nbsp; Z3: 10-20 mi &nbsp;·&nbsp; Z4: 20-30 mi. Wider radius required to avoid misreading sparse supply as whitespace.</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:8px; color:#555; line-height:1.6;">Smaller surrounding and non-core markets below 15K population. Z1: 0-5 mi &nbsp;·&nbsp; Z2: 5-10 mi &nbsp;·&nbsp; Z3: 10-20 mi &nbsp;·&nbsp; Z4: 20-30 mi. Wider radius required to avoid misreading sparse supply as whitespace. Note: STOC scores are not directly cross-tier comparable  -  zone radii widen significantly across tiers (Dense Urban Z1=2mi vs. Suburban Z1=5mi), so Target Neighbor counts reflect different catchment sizes.</div>
       </div>
     </div>
 
@@ -1341,7 +1341,7 @@ body {
     </div>
 
     <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; font-weight:800; line-height:1.2; color:#0D1B2F; letter-spacing:-0.4px; margin-bottom:5px;">52.5% of Targets Have a Competitor Within Half a Mile (all competitor types, including PE-owned).</div>
-    <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#555; line-height:1.7; margin-bottom:8px;">Nearest supply measures the distance to the closest competitor for every target. Tight proximity confirms consumer demand. Wide proximity signals isolation or whitespace. Supply gap measures how many independent competitors exist nearby relative to PE consolidation. Together they define whether a market is worth entering and whether the entry window is still open.</div>
+    <div style="font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; color:#555; line-height:1.7; margin-bottom:8px;">Nearest supply measures the distance to the closest competitor for every target. Tight proximity confirms consumer demand. Wide proximity signals isolation or whitespace. Supply gap measures how many independent competitors exist nearby relative to PE consolidation. PE-owned locations are not counted as independent competitors in the supply-gap or GOI calculations; they are tracked separately. Together they define whether a market is worth entering and whether the entry window is still open.</div>
 
     <!-- TWO COLUMNS: Proximity distribution left, Supply gap right -->
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:6px; flex-shrink:0;">
